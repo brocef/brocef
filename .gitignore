@@ -28,5 +28,14 @@ codekit-config.json
 _asset_bundler_cache
 _site
 
+# VS Code
+.vscode
+.dev.env
+
+# Python
+__pycache__
+env/
+.noseids
+
 # Sample docs
 ex-docs/

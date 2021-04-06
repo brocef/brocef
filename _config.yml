@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Brian Cefali"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/headshot.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A detailed documentation of Brian Cefali's Brain Cefailures, and the lessons learned from them."
   location         : "Brooklyn, New York"
   email            :
@@ -174,6 +174,7 @@ exclude:
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
   - /ex-docs
+  - /env # ignore Python venv
 keep_files:
   - .git
   - .svn

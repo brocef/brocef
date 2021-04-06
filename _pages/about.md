@@ -20,7 +20,7 @@ Software Engineering, Information Security
 ## Projects
 
 ### BetterSoundCloud
-https://github.com/brocef/BetterSoundCloud
+[https://github.com/brocef/BetterSoundCloud](https://github.com/brocef/BetterSoundCloud)
 
 ### Muse
-https://github.com/brocef/Muse
+[https://github.com/brocef/Muse](https://github.com/brocef/Muse)
