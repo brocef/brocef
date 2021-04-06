@@ -3,6 +3,7 @@ title:  "Unit Testing in PySide2"
 toc: true
 toc_sticky: true
 classes: extra-wide
+show_comments: true
 ---
 
 For my first post, I will be discussing something that I've had to deal with for quite some time now: writing Python unit tests for a GUI written in Qt.

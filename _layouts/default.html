@@ -12,6 +12,10 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    {% if page.show_comments == true %}
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    {% endif %}
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -22,6 +26,10 @@
     <div class="initial-content">
       {{ content }}
     </div>
+
+    {% if page.show_comments == true %}
+    <div id="gitalk-container"></div>
+    {% endif %}
 
     {% if site.search == true %}
       <div class="search-content">
@@ -38,5 +46,20 @@
 
     {% include scripts.html %}
 
+    {% if page.show_comments == true %}
+    <script>
+      const gitalk = new Gitalk({
+        clientID: '966865b97d2341601299',
+        clientSecret: '9b9372c3fcaef6a967a3da5e762a5990289daed5',
+        repo: 'brocef-gitalk',
+        owner: 'brocef',
+        admin: ['brocef'],
+        id: location.pathname,
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+      
+      gitalk.render('gitalk-container')
+      </script>
+    {% endif %}
   </body>
 </html>
