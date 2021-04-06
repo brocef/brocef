@@ -60,6 +60,10 @@ layout: default
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
       {% include comments.html %}
     {% endif %}
+
+    {% if page.show_comments == true %}
+    <div id="gitalk-container" class="page__inner-wrap"></div>
+    {% endif %}
   </article>
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}

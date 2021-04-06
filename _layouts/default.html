@@ -27,10 +27,6 @@
       {{ content }}
     </div>
 
-    {% if page.show_comments == true %}
-    <div id="gitalk-container"></div>
-    {% endif %}
-
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}
